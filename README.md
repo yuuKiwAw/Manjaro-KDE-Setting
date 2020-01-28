@@ -1,7 +1,7 @@
 # Manjaro-KDE-配置安装
 
-配置源
-===
+##配置源
+
 配置国内镜像源
 ---
 sudo pacman-mirrors -i -c China -m rank //更新镜像排名
