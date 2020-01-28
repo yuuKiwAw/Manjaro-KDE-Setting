@@ -66,3 +66,25 @@ plugins=(
   zsh-autosuggestions
 )
 ```
+### 刷新配置
+```
+source ~/.zshrc
+```
+## 配置搜狗拼音
+
+### 安装fcitx输入法管理器
+```
+sudo pacman -S fcitx-im     //全部安装
+sudo pacman -S fcitx-qt4    //搜狗拼音只支持qt4
+sudo pacman -S fcitx-configtool     //图形化配置工具
+sudo pacman -S fcitx-sogoupinyin
+```
+### 配置文件
+```
+nano ~/.xprofile
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=”@im=fcitx”
+```
+
