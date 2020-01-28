@@ -4,9 +4,11 @@
 
 ### 配置国内镜像源
 
-    sudo pacman-mirrors -i -c China -m rank //更新镜像排名
-    sudo vim /etc/pacman.d/mirrorlist //查看选择的源
-    sudo pacman -Syy //更新数据源
+```
+sudo pacman-mirrors -i -c China -m rank //更新镜像排名
+sudo vim /etc/pacman.d/mirrorlist //查看选择的源
+sudo pacman -Syy //更新数据源
+```
 
 ### 设置源
 
