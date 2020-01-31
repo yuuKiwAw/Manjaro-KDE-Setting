@@ -34,6 +34,7 @@ sudo pacman -Syu
 
 ## 安装zsh
 ```
+sudo pacman -S zsh
 cat /etc/shells //查看本机有哪几种shell
 chsh -s /bin/zsh
 ```
