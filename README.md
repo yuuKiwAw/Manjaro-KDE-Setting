@@ -92,4 +92,7 @@ export XMODIFIERS=”@im=fcitx”
 ```
 sudo pacman -S netease-cloud-music
 ```
-
+### GFWlist
+```
+https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+```
