@@ -88,4 +88,8 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=”@im=fcitx”
 ```
+### 安装网易云音乐
+```
+sudo pacman -S netease-cloud-music
+```
 
