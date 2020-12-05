@@ -96,3 +96,57 @@ sudo pacman -S netease-cloud-music
 ```
 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 ```
+### Anaconda配置
+```
+yay -S anaconda
+source /opt/anaconda/bin/active root
+
+# 在 ~/.bashrc 中添加
+export PATH=/opt/anaconda/bin:$PATH
+source /opt/anaconda/bin/activate root
+
+# 关于 zsh，打开 ~/.zshrc
+vim ~/.zshrc
+export PATH="/opt/anaconda/bin:$PATH"
+source ~/.zshrc
+
+# 配置镜像
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+# 创建环境
+conda create -n py38 python=3.8
+# 删除环境
+conda remove -n py38 --all
+# 查看已有环境
+conda info -e
+
+# 查看当前环境下已安装的包
+conda list
+
+# 查看某个指定环境的已安装包
+conda list -n python34
+
+# 查找package信息
+conda search numpy
+
+# 安装package
+conda install -n python34 numpy
+# 如果不用-n指定环境名称，则被安装在当前活跃环境
+# 也可以通过-c指定通过某个channel安装
+
+# 更新package
+conda update -n python34 numpy
+
+# 删除package
+conda remove -n python34 numpy
+
+# 更新conda，保持conda最新
+conda update conda
+
+# 更新anaconda
+conda update anaconda
+
+# 更新python
+conda update python
+# 假设当前环境是python 3.4, conda会将python升级为3.4.x系列的当前最新版本
+```
